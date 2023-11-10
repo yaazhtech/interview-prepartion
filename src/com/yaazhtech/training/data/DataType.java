@@ -1,4 +1,4 @@
-package com.yaazhtech.training.dataType;
+package com.yaazhtech.training.data;
 
 public class DataType {
     // primitive type
