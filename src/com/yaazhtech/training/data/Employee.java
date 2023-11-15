@@ -2,8 +2,8 @@ package com.yaazhtech.training.data;
 
 import java.util.Objects;
 
-public class Employee {
-    private StringBuilder name;// name has own hashcode
+public class Employee { //hashCode Heap empRef [,refName,refPan] ["name"."pan"                                    ]
+    private StringBuilder name;// name has own hashcode "name"
     private StringBuilder pan; // pan has own hashcode
 
     public StringBuilder getName() {
@@ -20,6 +20,19 @@ public class Employee {
 
     public void setPan(StringBuilder pan) {
         this.pan = pan;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Employee)) return false;
+        Employee employee = (Employee) o;
+        return Objects.equals(getPan(), employee.getPan());
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getPan());
     }
 
     @Override

@@ -4,6 +4,13 @@ import com.yaazhtech.training.data.Employee;
 import com.yaazhtech.training.data.EmployeeWithImMutableObjects;
 
 public class DriverClass {
+
+    String name; // access by objectRef
+    static String pan; // access by ClassName
+
+    public static void abcFuction(){} // access/ call this function by className
+    public  void abcFuctionsdfds(){} // access/call by objectRef
+
 // purpose of constructor - To create object
     // purpose of Object - to class the class member such that call/access method/data (member of class)
     public static void main(String[] args) {
@@ -38,6 +45,8 @@ public class DriverClass {
 // how many object heap memory 6 in case of mutable
         // In case of immutable object
         EmployeeWithImMutableObjects eIm1=new EmployeeWithImMutableObjects(); // has own hashcode
+
+
         eIm1.setName("abc");
         eIm1.setPan("ABC2346M");
         EmployeeWithImMutableObjects eIm2=new EmployeeWithImMutableObjects();// has own hashcode

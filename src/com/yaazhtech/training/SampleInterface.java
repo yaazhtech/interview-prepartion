@@ -19,5 +19,8 @@ public interface SampleInterface {
     default void defaultMethod() {
         // default method implementation
     }
+    private int getHorsePowerNew(int rpm, int torque) {
+        return (rpm * torque) / 5252;
+    }
 
 }
