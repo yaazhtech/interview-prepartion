@@ -1,8 +1,9 @@
 package com.yaazhtech.training.data;
 
+import java.io.Serializable;
 import java.util.Objects;
 
-public class Employee { //hashCode Heap empRef [,refName,refPan] ["name"."pan"                                    ]
+public class Employee implements Cloneable, Serializable { //hashCode Heap empRef [,refName,refPan] ["name"."pan"                                    ]
     private StringBuilder name;// name has own hashcode "name"
     private StringBuilder pan; // pan has own hashcode
 
@@ -21,7 +22,7 @@ public class Employee { //hashCode Heap empRef [,refName,refPan] ["name"."pan"  
     public void setPan(StringBuilder pan) {
         this.pan = pan;
     }
-
+ private Employee(){}
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

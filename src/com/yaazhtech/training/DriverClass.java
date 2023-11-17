@@ -13,16 +13,17 @@ public class DriverClass {
 
 // purpose of constructor - To create object
     // purpose of Object - to class the class member such that call/access method/data (member of class)
-    public static void main(String[] args) {
+    public void main(String[] args) throws CloneNotSupportedException {
         System.out.println("I am printing from main method/function");
         DriverClass.newMethod();// class name used to call static member
 
         DriverClass objectRef = new DriverClass();// ref and object / instance
+
         objectRef.newNonStaticMethod();// can be accessed only via object
 
         System.out.println("Get print data from interface: "+SampleInterface.getHorsePower(10,1));
 // In case of mutable object
-        Employee e1=new Employee(); // has own hashcode
+        Employee e1= (Employee) super.clone(); // has own hashcode
         e1.setName(new StringBuilder("abc"));
         e1.setPan(new StringBuilder("ABC2346M"));
         Employee e2=new Employee();// has own hashcode
