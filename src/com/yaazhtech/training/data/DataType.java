@@ -49,10 +49,23 @@ public class DataType {
     // why?
 
 
+//Divya
+    //Arrays // index
+    // primitive array
+    //declaration
+    int arr[];
+    //allocating memory
+    int arr1[]=new int[]{1,3,4,4}; // how to iterate the elemnet, using forloop
+    // wrapper array
+    Integer arrWrapper[];
+    Integer arrWrapperWithMemory[]=new Integer[]{1,3,4,4};
 
-    //Arrays
+//================inBuild object/primitive is done=============================
+
 
     // user-defined object
+
+
     //collection of wrapper object
     // collection of user-defined object
 

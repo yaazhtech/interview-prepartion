@@ -22,7 +22,6 @@ public class Employee implements Cloneable, Serializable { //hashCode Heap empRe
     public void setPan(StringBuilder pan) {
         this.pan = pan;
     }
- private Employee(){}
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
