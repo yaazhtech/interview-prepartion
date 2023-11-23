@@ -2,7 +2,7 @@ package com.yaazhtech.training;
 
 import com.yaazhtech.training.data.Employee;
 import com.yaazhtech.training.data.EmployeeWithImMutableObjects;
-
+// build path and classpath ezhil
 public class DriverClass {
 
     String name; // access by objectRef
@@ -23,7 +23,7 @@ public class DriverClass {
 
         System.out.println("Get print data from interface: "+SampleInterface.getHorsePower(10,1));
 // In case of mutable object
-        Employee e1= (Employee) super.clone(); // has own hashcode
+        Employee e1= new Employee(); // has own hashcode
         e1.setName(new StringBuilder("abc"));
         e1.setPan(new StringBuilder("ABC2346M"));
         Employee e2=new Employee();// has own hashcode

@@ -5,8 +5,9 @@ import java.util.Objects;
 
 public class Employee implements Cloneable, Serializable { //hashCode Heap empRef [,refName,refPan] ["name"."pan"                                    ]
     private StringBuilder name;// name has own hashcode "name"
-    private StringBuilder pan; // pan has own hashcode
-
+    private  StringBuilder pan; // pan has own hashcode
+    public static String iamStatic;
+    public String iamNonStatic;
     public StringBuilder getName() {
         return name;
     }
@@ -22,6 +23,20 @@ public class Employee implements Cloneable, Serializable { //hashCode Heap empRe
     public void setPan(StringBuilder pan) {
         this.pan = pan;
     }
+
+private void checkAccess(){ // non static can access both members from same class
+
+        Employee employee=new Employee();// employee is non static member object
+    iamNonStatic="sfsd";
+    iamStatic="sfsd";
+    // calling
+}
+    private static void checkAccessStatic(){ //
+        //iamNonStatic="sfsd"; // reason because it would not be availeb while loading
+        iamStatic="sfsd";
+
+    }
+    // need object non static
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

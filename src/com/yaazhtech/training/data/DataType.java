@@ -63,8 +63,64 @@ public class DataType {
 //================inBuild object/primitive is done=============================
 
 
-    // user-defined object
+    // user-defined/custom object
+/*
+Pavithra:
 
+1. according to your business problems/requirement.
+User -> int abc, String email,ph,name,int number[],Employement->LeaveData->CL->List<Leaves>,Salary-> List<Statement>
+Repository-> functions, no attribute
+ServiceImp-> attribute,functions
+
+// Model(dao) view() controller
+User annaLakshmi=new User();// data DAO (Data access object layer)
+Repository repo=new Respository(); // repo will talk to db connection object it will retirve data from db (CRUD)
+ServiceImp impl=ServiceImp();
+ControllerImp impl=ServiceImp();//int abc, String email,ph,name,int number[],Employement->LeaveData->CL->List<Leaves>,Salary-> List<Statement>
+Is it possible or not? possible still it work, bad design
+can we have controllerImpl alone?//
+
+
+==========================
+
+User sunnel=new User();
+User rupa=new User();
+Emloyment e=new Employees();
+ u.email// heap// null pointer
+List<LeaveData> leafLlis=new ArrayList();// empty
+for(int i=0;i<1000;i++){
+
+LeaveData l=new LeaveData();
+
+leafLlis.add(l);// i=0,size 1, i=999, size=1000
+
+
+
+u.getEmployment()
+LeaveData le=new LeaveData();
+e.setLeaveData(le);
+u.SetEm(e);
+u.getE.getL
+annaLakshmi.get
+a. Train and hire , direct hire, only Training
+b. hireDeveloper, webDeveloper
+
+
+
+ */ //1.2 Venu
+    //what is collection framework
+    // details about each collection (wrapper /custom)
+    // when will you go for particular collect the reason behind.
+ //collection    - multi item,group of object, multiple data
+    //int,Integer,Employee(int)
+    // array - because its nature structure (fixed size,index based)
+    // DSA - traverse,search,retrieve,delete,modify,add
+    // 100 - i =0.....n, if (isExist) search,read,retrieve from whole data
+    // Directory book - search index based is quicker
+    // Linked list,map, queue, stack, Heap(min,max),,table,graph,BT,BST,RBT, priorityQu
+
+    // collection framework is based DSA
+    // 1m
 
     //collection of wrapper object
     // collection of user-defined object
