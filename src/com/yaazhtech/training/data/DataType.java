@@ -105,7 +105,7 @@ annaLakshmi.get
 a. Train and hire , direct hire, only Training
 b. hireDeveloper, webDeveloper
 
-
+//
 
  */ //1.2 Venu
     //what is collection framework
@@ -121,6 +121,15 @@ b. hireDeveloper, webDeveloper
 
     // collection framework is based DSA
     // 1m
+    // parent interfaces of collection is set,queue,List
+    // Map is seperate family - Map is partent interface for Abstract map and sorted map
+//ArrayList
+    // load factor
+    // behaviour
+    // thread safe
+    // concurenncy
+    // internal impl
+
 
     //collection of wrapper object
     // collection of user-defined object
