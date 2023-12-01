@@ -1,6 +1,6 @@
 package com.yaazhtech.training.data;
 
-import java.util.Arrays;
+import java.util.*;
 import java.util.stream.IntStream;
 
 public class DataType {
@@ -107,7 +107,7 @@ b. hireDeveloper, webDeveloper
 
 //
 
- */ //1.2 Venu
+ */ //1.2 Jenita
     //what is collection framework
     // details about each collection (wrapper /custom)
     // when will you go for particular collect the reason behind.
@@ -129,6 +129,15 @@ b. hireDeveloper, webDeveloper
     // thread safe
     // concurenncy
     // internal impl
+// wrapper
+Map<String,String> testMap=new HashMap<>();// key,value //put // get// remove //containsKey
+    //array and linkedList
+    // 16
+    //
+
+
+List<String> testList=new LinkedList<>();// value // add // get // remove
+
 
 
     //collection of wrapper object
